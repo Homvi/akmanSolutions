@@ -4161,8 +4161,7 @@ input, select, textarea {
 	}
 
 	.logoNav{
-		height: 40px;
+		height: 3.5em;
+		padding: 5px;
 		display: flex;
-		justify-content: center;
-		margin: 10px;
 	}
