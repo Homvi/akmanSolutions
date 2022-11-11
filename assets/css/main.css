@@ -1,6 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 
+/* brand color
+	light blue: #75c7df;
+	dark blue: #1f1e43;
+*/
+
 /*
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
@@ -99,8 +104,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.png");
+		background-color: #bdc0d1;
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.png"); 
 		background-size: auto,
  cover;
 		background-attachment: fixed,
