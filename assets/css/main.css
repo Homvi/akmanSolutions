@@ -3471,7 +3471,7 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, #1f1e43, #75c7df), url(../../images/bg.jpg);
 				background-size: auto,
  cover;
 				background-position: center,
@@ -4158,4 +4158,11 @@ input, select, textarea {
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
 
+	}
+
+	.logoNav{
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		margin: 10px;
 	}
