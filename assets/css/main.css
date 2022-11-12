@@ -3343,8 +3343,8 @@ input, select, textarea {
 
 					#menu .links li a:hover {
 						/* background: #75c7df; */
-						 border: 1px  solid #75c7df; 
-						/* box-shadow: inset 0px 0px 1px 1px #75c7df; */
+						/*  border: 1px  solid #75c7df;  */
+						box-shadow: inset 0px 0px 1px 1px #75c7df; 
 					}
 
 		@media screen and (max-width: 736px) {
