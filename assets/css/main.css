@@ -4174,6 +4174,6 @@ input, select, textarea {
 }
 
 #banner{
-	background-color: #2e314100;
+	background-color: rgba(0, 0, 0, 0);
 	background-image: linear-gradient(to top, #1f1e4300, #75c7dfa1), url(../../images/bg.jpg);
 }
