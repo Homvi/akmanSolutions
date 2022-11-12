@@ -105,7 +105,7 @@ input, select, textarea {
 
 	body {
 		background-color: #bdc0d1;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.png"); 
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); 
 		background-size: auto,
  cover;
 		background-attachment: fixed,
