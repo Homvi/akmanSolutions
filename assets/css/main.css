@@ -3342,7 +3342,8 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #75c7df;
+						/* background: #75c7df; */
+						border: 1px solid #75c7df;
 					}
 
 		@media screen and (max-width: 736px) {
@@ -3470,8 +3471,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, #1f1e43, #75c7df), url(../../images/bg.jpg);
+				background-color: #2e314100;
+				background-image: linear-gradient(to top, #1f1e4300, #75c7dfa1), url(../../images/bg.jpg);
 				background-size: auto,
  cover;
 				background-position: center,
@@ -4162,6 +4163,17 @@ input, select, textarea {
 
 	.logoNav{
 		height: 3.5em;
-		padding: 5px;
-		display: flex;
+		padding-top: 1.15em;
 	}
+
+@media	screen and (max-width: 736px){
+	.logoNav{
+		padding-top: 0.7em;
+		height: 2.75em;
+	}
+}
+
+#banner{
+	background-color: #2e314100;
+	background-image: linear-gradient(to top, #1f1e4300, #75c7dfa1), url(../../images/bg.jpg);
+}
