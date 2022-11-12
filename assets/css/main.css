@@ -3473,8 +3473,8 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: rgba(0, 0, 0, 0);
-				/* background-image: linear-gradient(to top, #1f1e4300, #75c7dfa1), url(../../images/bg_jpg.jpg); */
-				background-image: linear-gradient(to top, #eee, #77d9f640), url(../../images/bg_jpg.jpg);
+				/* background-image: linear-gradient(to top, #1f1e4300, #75c7dfa1), url(../../images/bg.webp); */
+				background-image: linear-gradient(to top, #eee, #77d9f640), url(../../images/bg.webp);
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3586,7 +3586,7 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, #eee, #77d9f640), url(../../images/bg_jpg.jpg);
+			background-image: linear-gradient(to top, #eee, #77d9f640), url(../../images/bg.webp);
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4178,8 +4178,8 @@ input, select, textarea {
 #banner {
 	padding: 7em 0 8.25em 0 ;
 	background-color: rgba(0, 0, 0, 0);
-	/* background-image: linear-gradient(to top, #1f1e4300, #75c7dfa1), url(../../images/bg_jpg.jpg); */
-	background-image: linear-gradient(to top, #eee, #77d9f640), url(../../images/bg_jpg.jpg);
+	/* background-image: linear-gradient(to top, #1f1e4300, #75c7dfa1), url(../../images/bg.webp); */
+	background-image: linear-gradient(to top, #eee, #77d9f640), url(../../images/bg.webp);
 	background-size: auto,
 cover;
 	background-position: center,
