@@ -130,9 +130,14 @@
 						<div class="inner">
 							<h2 class="major">Vegye fel velünk a kapcsolatot</h2>
 							<p>Ügyfeleink sikere a mi vállalatunk sikere</p>
-							<form method="post" action="#" name="contact" data-netlify="true">
+							<form method="POST" action="#" name="contact" data-netlify="true">
 								<input type="hidden" name="form-name" value="contact">
 								<div class="fields">
+									<p class="hidden">
+										<label>
+										  Don’t fill this out if you’re human: <input name="bot-field" />
+										</label>
+									  </p>
 									<div class="field">
 										<label for="name">Név</label>
 										<input type="text" name="name" id="name" />

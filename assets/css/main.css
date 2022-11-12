@@ -4190,3 +4190,7 @@ center;
 .slogan{
 	color: #1f1e43;
 }
+
+.hidden{
+	display: none;
+}
