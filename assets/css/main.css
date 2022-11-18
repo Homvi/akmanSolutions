@@ -4209,3 +4209,8 @@ center;
 html{
 	scroll-behavior: smooth;
 }
+
+.cv-container{
+	display: flex;
+	align-items: baseline;
+}
