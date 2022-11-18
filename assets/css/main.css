@@ -4205,3 +4205,7 @@ center;
 	margin-top: -6.5em;
 	padding-top: 6.5em;
 }
+
+html{
+	scroll-behavior: smooth;
+}
