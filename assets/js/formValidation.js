@@ -22,12 +22,14 @@ let lastNameField = document.getElementById("lastName")
 let firstNameField = document.getElementById("firstName")
 let phone = document.getElementById("phone")
 let emailField = document.getElementById("email")
+let professionSelect = document.getElementById("select-profession")
 
 let isFirstNameFilled = false;
 let isLastNameFilled = false;
 let isEmailFilled = false;
 let isPrivacyChecked = false;
 let isPhoneFilled = false;
+let isProfessionChosen = false;
 
 
 const checkIfFirstName = () => {
@@ -42,7 +44,24 @@ const checkIfFirstName = () => {
 		isFirstNameFilled = true
 	}
 
-	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled){
+	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen){
+		sendMessageBtn.classList.remove("disabled")
+	}
+}
+
+const checkIfProfessionChosen = () => {
+
+	if(professionSelect.value == "-"){
+		professionSelect.style.border = "1px solid #cd5c5c"
+		isProfessionChosen = false
+	}
+
+	if(professionSelect.value !== "-"){
+		professionSelect.style.border = "solid 2px rgba(255, 255, 255, 0.1)"
+		isProfessionChosen = true
+	}
+
+	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen){
 		sendMessageBtn.classList.remove("disabled")
 	}
 }
@@ -56,7 +75,7 @@ const checkIfLastName = () => {
 		lastNameField.style.border = "solid 2px rgba(255, 255, 255, 0.1)"
 		isLastNameFilled = true
 	}
-	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled){
+	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen){
 		sendMessageBtn.classList.remove("disabled")
 	}
 }
@@ -65,11 +84,11 @@ const checkIfPhone = () => {
 		phone.style.border = "1px solid #cd5c5c"
 		isPhoneFilled = false
 	}
-	if(lastNameField.value.length !== 0){
+	if(phone.value.length !== 0){
 		phone.style.border = "solid 2px rgba(255, 255, 255, 0.1)"
 		isPhoneFilled = true
 	}
-	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled){
+	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen){
 		sendMessageBtn.classList.remove("disabled")
 	}
 
@@ -85,7 +104,7 @@ const checkIfEmail = () => {
 		emailField.style.border = "solid 2px rgba(255, 255, 255, 0.1)"
 		isEmailFilled = true;
 	}
-	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled){
+	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen){
 		sendMessageBtn.classList.remove("disabled")
 	}
 }
@@ -99,7 +118,7 @@ const checkIfPrivacyChecked = () => {
 		privacyPolicyText.style.color = "rgba(255, 255, 255, 0.55)"
 		isPrivacyChecked = true;
 	}
-	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled){
+	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen){
 		sendMessageBtn.classList.remove("disabled")
 	}
 }
@@ -110,7 +129,8 @@ const checkAllField = () => {
 	checkIfEmail();
     checkIfPhone();
 	checkIfPrivacyChecked();
-	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled){
+    checkIfProfessionChosen();
+	if(isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen){
 		sendMessageBtn.classList.remove("disabled")
 		return true
 	}
@@ -122,7 +142,6 @@ const checkAllField = () => {
 
 sendMessageBtn.addEventListener("mouseover", function(){
 		checkAllField()
-        console.log("Fields checked");
 })
 
 privacyCheckBox.addEventListener("change", function(){
@@ -142,5 +161,8 @@ emailField.addEventListener("change", function(){
 
 phone.addEventListener("change", function(){
 	checkIfPhone();
-    console.log("Phone field checked");
+})
+
+professionSelect.addEventListener("change", function(){
+	checkIfProfessionChosen();
 })
