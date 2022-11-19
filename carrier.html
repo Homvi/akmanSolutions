@@ -115,7 +115,7 @@
                             <input type="radio" id="notWorkedAbroad" onchange="checkIfWorkedInGermany()" name="workedAbroad">
                             <label for="notWorkedAbroad">Még nem dolgoztam Németországban</label>
                         </div>
-                        <div id="taxInput" class="field hidden">
+                        <div id="taxInput" class="field unvisible">
                             <label for="tax-number">Német adóazonosító (Steuernummer)</label>
                             <input type="text" name="tax-number" id="tax-number" />
                         </div>
@@ -133,8 +133,12 @@
                         <input class="hidden button btn secondary" type="file" id="cv" name="cv"
                             accept="image/png, image/jpeg, application/pdf">
                     </ul> -->
+                    <div class="col-6 col-12-small">
+                        <input type="checkbox"  name="privacyPolicy" id="privacyPolicy">
+                        <label id="privacyPolicyText" for="privacyPolicy">Elovastam és elfogadom az <a href="/privacy">adatkezelési tájékoztatóban</a> foglaltakat</label>
+                    </div>
                     <ul class="actions">
-                        <li><input class="primary" type="submit" value="Jelentkezés küldése" /></li>
+                        <li><input class="primary" id="sendApplicationBtn" type="submit" value="Jelentkezés küldése" /></li>
                     </ul>
                 </form>
                 <ul class="contact">
