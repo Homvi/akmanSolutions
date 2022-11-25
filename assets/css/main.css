@@ -3390,6 +3390,7 @@ input, select, textarea {
 
 		#banner .inner {
 			margin: 0 auto;
+			padding: 1em;
 			width: 55em;
 		}
 
