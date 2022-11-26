@@ -28,10 +28,12 @@ const checkIfWorkedInGermany = () => {
 	if (workedCheckbox.checked) {
 		taxInput.classList.remove("unvisible")
 		workedInGermany = false
+		isTaxNumberFilled = false;
 	}
 	if (notWorkedCheckbox.checked) {
 		taxInput.classList.add("unvisible")
 		workedInGermany = true
+		isTaxNumberFilled = true;
 	}
 }
 //check if taxnumber filled
@@ -51,7 +53,6 @@ const checkIfTaxNumberFilled = () => {
 		sendMessageBtn.type = "submit"
 	}
 }
-
 
 const checkIfFirstName = () => {
 
@@ -102,6 +103,7 @@ const checkIfLastName = () => {
 		sendMessageBtn.type = "submit"
 	}
 }
+
 const checkIfPhone = () => {
 	if (phone.value.length == 0) {
 		phone.style.border = "1px solid #cd5c5c"
@@ -171,31 +173,31 @@ const checkAllField = () => {
  sendMessageBtn.addEventListener("mouseover", function () {
 	checkAllField()
 }) 
-
-
 privacyCheckBox.addEventListener("change", function () {
 	checkIfPrivacyChecked();
+	checkAllField()
 })
-
 firstNameField.addEventListener("change", function () {
 	checkIfFirstName();
+	checkAllField()
 })
 lastNameField.addEventListener("change", function () {
 	checkIfLastName();
+	checkAllField()
 })
-
 emailField.addEventListener("change", function () {
 	checkIfEmail();
+	checkAllField()
 })
-
 phone.addEventListener("change", function () {
 	checkIfPhone();
+	checkAllField()
 })
-
 professionSelect.addEventListener("change", function () {
 	checkIfProfessionChosen();
+	checkAllField()
 })
-
 taxInput.addEventListener("change", function () {
 	checkIfTaxNumberFilled();
+	checkAllField()
 })
