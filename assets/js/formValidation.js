@@ -36,7 +36,7 @@ const checkIfWorkedInGermany = () => {
 }
 //check if taxnumber filled
 const checkIfTaxNumberFilled = () => {
-	if (taxInputInput.value.length < 2) {
+	if (!isTaxNumberFilled && taxInputInput.value.length < 2) {
 		taxInputInput.style.border = "1px solid #cd5c5c"
 		isTaxNumberFilled = false
 	}
