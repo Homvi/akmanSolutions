@@ -162,19 +162,23 @@
 						</p>
 						<div class="field">
 							<label for="name">Név</label>
-							<input type="text" name="name" id="name" />
+							<input type="text" name="name" id="contactName" />
 						</div>
 						<div class="field">
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email" />
+							<input type="email" name="email" id="contactEmail" />
 						</div>
 						<div class="field">
 							<label for="message">Üzenet</label>
-							<textarea name="message" id="message" rows="4"></textarea>
+							<textarea name="message" id="contactMessage" rows="4"></textarea>
 						</div>
 					</div>
+					<div class="col-6 col-12-small">
+                        <input type="checkbox" value="igen elfogadom" name="privacyPolicy" id="privacyPolicy">
+                        <label id="privacyPolicyText"  for="privacyPolicy">Elovastam és elfogadom az <a href="/privacy">adatkezelési tájékoztatóban</a> foglaltakat</label>
+                    </div>
 					<ul class="actions">
-						<li><input type="submit" value="Üzenet küldése" /></li>
+						<li><input type="submit" class="disabled" id="submitBtn" value="Üzenet küldése" /></li>
 					</ul>
 				</form>
 				<ul class="contact">

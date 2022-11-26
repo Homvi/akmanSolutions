@@ -68,6 +68,7 @@ const checkIfFirstName = () => {
 
 	if (isPrivacyChecked && isEmailFilled && isFirstNameFilled && isLastNameFilled && isPhoneFilled && isProfessionChosen && isTaxNumberFilled) {
 		sendMessageBtn.classList.remove("disabled")
+		sendMessageBtn.type = "submit"
 	}
 }
 
