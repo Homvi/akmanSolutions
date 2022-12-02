@@ -3272,7 +3272,7 @@ input, select, textarea {
 		text-align: center;
 		top: 0;
 		visibility: hidden;
-		width: 100%;
+		width: 100vw;
 	}
 
 		#menu .inner {
@@ -4214,6 +4214,7 @@ center;
 
 html{
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 .cv-container{
@@ -4245,7 +4246,7 @@ html{
 }
 
 #chooseLangImg{
-	height: 25px; 
+	height: 29px; 
 	position: absolute; 
 	top: 10px; 
 	left: 10px;
