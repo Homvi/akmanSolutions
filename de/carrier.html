@@ -5,15 +5,15 @@
     <title>Akman Solutions</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <meta name="description" content="Munkaerőkölcsönzés, Villanyszerelés, Hegesztés, Kábelhúzás">
     <meta name="author" content="adakin">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <meta name="msapplication-TileColor" content="#75c7df">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#1f1e43">
+    <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+    <meta name="theme-color" content="#1f1e43">
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css" />
+        <link rel="stylesheet" href="../assets/css/noscript.css" />
     </noscript>
     <meta name="keywords" content="kábelbán, kábeltálca, villanyszerelő, minősített,
 		hegesztő, welding, cable pulling, cable, kable,munkaerőkölcsönzés,
@@ -26,7 +26,7 @@
     <div id="page-wrapper">
         <!-- Header -->
         <header id="header" class="alt">
-            <h1><a href="index.html"><img class="logoNav" src="images/akmanLight.webp" alt="akman solutions"></a></h1>
+            <h1><a href="../de/index.html"><img class="logoNav" src="../images/akmanLight.webp" alt="akman solutions"></a></h1>
             <nav>
                 <a href="#menu">Menü</a>
             </nav>
@@ -37,10 +37,11 @@
             <div class="inner">
                 <h2>Menü</h2>
                 <ul class="links">
-                    <li><a href="index.html">Főoldal</a></li>
-                    <li><a href="carrier.html">Álláslehetőség</a></li>
+                    <li><a href="./index.html">Startseite</a></li>
+                    <li><a href="./index.html#one">Über uns</a></li>
+					<li><a href="./index.html#footer">Kontakt</a></li>
                 </ul>
-                <a href="#" class="close">Bezár</a>
+                <a href="#" class="close">Schließen</a>
             </div>
         </nav>
 
@@ -52,7 +53,7 @@
                         <img src="images/akmanLight.webp" alt="akman logo">
                     </a>
                 </div>
-                <p class="slogan">Minőség, mennyiség</p>
+                <p class="slogan">Kwaliteit , Kwantiteit</p>
             </div>
         </section>
 
@@ -60,17 +61,17 @@
         <section id="wrapper">
             <section id="four" class="wrapper alt style1">
                 <div class="inner">
-                    <h2 class="major">Jelentkezzen hozzánk</h2>
+                    <h2 class="major">sich bei uns bewerben</h2>
                     <div class="col-6 col-12-medium">
-                        <h4>Nyitott pozíciók</h4>
+                        <h4>Offene Stelle</h4>
                         <ul>
-                            <li>Villanyszerelő</li>
-                            <li>Lakatos</li>
-                            <li>Villanyszerelő segéd</li>
+                            <li>Elektriker</li>
+                            <li>Schlosser</li>
+                            <li>Kabelzieher</li>
                         </ul>
                     </div>
                     <ul class="actions">
-                        <li><a href="#footer" class="button">Jelentkezem</a></li>
+                        <li><a href="#footer" class="button">Kontakt</a></li>
                     </ul>
                 </div>
             </section>
@@ -79,8 +80,9 @@
         <!-- Footer -->
         <section id="footer">
             <div class="inner">
-                <h2 class="major">Jelentkezés</h2>
-                <form method="POST" id="apllication-form" action="/applysuccessful.html" name="carrier" netlify-honeypot="bot-field" data-netlify="true">
+                <h2 class="major">Kontakt</h2>
+                <form method="POST" id="apllication-form" action="/applysuccessful.html" name="carrier"
+                    netlify-honeypot="bot-field" data-netlify="true">
                     <input type="hidden" name="form-name" value="carrier">
                     <div class="fields">
                         <p class="hidden">
@@ -89,43 +91,47 @@
                             </label>
                         </p>
                         <div class="field">
-                            <label for="lastName">Vezetéknév</label>
-                            <input type="text" name="lastName" id="lastName" />
+                            <label for="firstName">Vorname</label>
+                            <input type="text" name="firstName" id="firstName" />
                         </div>
                         <div class="field">
-                            <label for="firstName">Keresztnév</label>
-                            <input type="text" name="firstName" id="firstName" />
+                            <label for="lastName">Nachname</label>
+                            <input type="text" name="lastName" id="lastName" />
                         </div>
                         <div class="field">
                             <label for="email">Email</label>
                             <input type="email" name="email" id="email" />
                         </div>
                         <div class="field">
-                            <label for="phone">Telefonszám</label>
+                            <label for="phone">Telefonnummer</label>
                             <input type="text" name="phone" id="phone" />
                         </div>
                         <div class="field">
-                            <label for="select-profession">Minyen pozícióra szeretne jelentkezni?</label>
+                            <label for="select-profession">Für welche Stelle bewerben Sie sich?</label>
                             <select name="select-profession" id="select-profession">
                                 <option value="-">-</option>
-                                <option value="Villanyszerelő">Villanyszerelő</option>
-                                <option value="Lakatos">Lakatos</option>
-                                <option value="Villanyszerelő segéd">Villanyszerelő segéd</option>
+                                <option value="Villanyszerelő">Elektriker</option>
+                                <option value="Lakatos">Schlosser</option>
+                                <option value="Villanyszerelő segéd">Kabelzieher</option>
                             </select>
                         </div>
                         <div class="field">
-                            <label>Már dolgozott németországban?</p>
-                            <input type="radio" id="workedAbroad" onchange="checkIfWorkedInGermany()" value="igen" name="workedAbroad">
-                            <label for="workedAbroad" value="igen dolgoztam">Dolgoztam németországban</label>
-                            <input type="radio" id="notWorkedAbroad" onchange="checkIfWorkedInGermany()" value="Nem" name="workedAbroad">
-                            <label value="nem dolgoztam" for="notWorkedAbroad">Még nem dolgozott németországban</label> 
+                            <label>Haben Sie in Deutschland gearbeitet?</p>
+                                <input type="radio" id="workedAbroad" onchange="checkIfWorkedInGermany()" value="igen"
+                                    name="workedAbroad">
+                                <label for="workedAbroad" value="igen dolgoztam">Ich habe in Deutschland
+                                    gearbeitet</label>
+                                <input type="radio" id="notWorkedAbroad" onchange="checkIfWorkedInGermany()" value="Nem"
+                                    name="workedAbroad">
+                                <label value="nem dolgoztam" for="notWorkedAbroad">Ich habe nie in Deutschland
+                                    gearbeitet</label>
                         </div>
                         <div id="taxInput" class="field unvisible">
-                            <label for="tax-number">Német adóazonosító (Steuernummer)</label>
+                            <label for="tax-number">Steuernummer</label>
                             <input type="text" name="tax-number" id="taxInputInput" />
                         </div>
                     </div>
-                 <!--    <ul class="field">
+                    <!--    <ul class="field">
                         <div class="cv-container">
                             <label for="cv">Önéletrajz feltöltése
                                 
@@ -140,10 +146,12 @@
                     </ul> -->
                     <div class="col-6 col-12-small">
                         <input type="checkbox" value="igen elfogadom" name="privacyPolicy" id="privacyPolicy">
-                        <label id="privacyPolicyText"  for="privacyPolicy">Elovastam és elfogadom az <a href="../privacy.html">adatkezelési tájékoztatóban</a> foglaltakat</label>
+                        <label id="privacyPolicyText" for="privacyPolicy">Ich habe die Informationen im <a
+                                href="../privacy">Datenschutzhinweis</a> gelesen und akzeptiere sie.</label>
                     </div>
                     <ul class="actions">
-                        <li><input class="primary disabled" id="sendApplicationBtn" type="submit" value="Jelentkezés küldése" /></li>
+                        <li><input class="primary disabled" id="sendApplicationBtn" type="submit"
+                                value="Senden an" /></li>
                     </ul>
                 </form>
                 <ul class="contact">
@@ -153,10 +161,11 @@
                         9094 Tápszentmiklós
                     </li>
                     <li class="icon solid fa-phone"><a href="tel:+36306555138">+36 30 655 5138</a></li>
-                    <li class="icon solid fa-envelope"><a href="mailto:info@akman-solutions.com">info@akman-solutions.com</a></li>
+                    <li class="icon solid fa-envelope"><a
+                            href="mailto:info@akman-solutions.com">info@akman-solutions.com</a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy;Akman Solutions Hungary Kft. Minden jog fenntartva.</li>
+                    <li>&copy;Akman Solutions Hungary Kft. Alle Rechte vorbehalten.</li>
                     <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                 </ul>
             </div>
@@ -165,13 +174,13 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/formValidation.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/formValidation.js"></script>
 
 </body>
 
